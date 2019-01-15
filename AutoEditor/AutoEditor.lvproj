@@ -11,7 +11,6 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="PathDrawerMain.vi" Type="VI" URL="../PathDrawer/PathDrawerMain.vi"/>
-		<Item Name="StartingPositions.ctl" Type="VI" URL="../PathDrawer/StartingPositions.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -42,6 +41,7 @@
 			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
 			<Item Name="Smoother.vi" Type="VI" URL="../PathDrawer/Smoother.vi"/>
 			<Item Name="StartingLocations.vi" Type="VI" URL="../PathDrawer/StartingLocations.vi"/>
+			<Item Name="StartingPositions.ctl" Type="VI" URL="../PathDrawer/StartingPositions.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
