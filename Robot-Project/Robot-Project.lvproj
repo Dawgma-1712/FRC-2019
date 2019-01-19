@@ -118,6 +118,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Arm" Type="Folder" URL="../Arm">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Testers" Type="Folder">
+			<Item Name="Tune And Test Arm.vi" Type="VI" URL="../Testers/Tune And Test Arm.vi"/>
+		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 		<Item Name="Autonomous.vi" Type="VI" URL="../Autonomous.vi"/>
