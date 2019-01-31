@@ -13,7 +13,39 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="TestPurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/TestPurePursuit.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
+				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
+				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
+			</Item>
+			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
+			<Item Name="InjectPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/InjectPoints.vi"/>
+			<Item Name="DistanceFormula.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/DistanceFormula.vi"/>
+			<Item Name="Smoother.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/Smoother.vi"/>
+			<Item Name="PurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PurePursuit.vi"/>
+			<Item Name="RadiusOfCircleThreePoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RadiusOfCircleThreePoints.vi"/>
+			<Item Name="CalcDistanceFromEnd.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalcDistanceFromEnd.vi"/>
+			<Item Name="CalculateVelAtPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculateVelAtPoints.vi"/>
+			<Item Name="ClosestPoint.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/ClosestPoint.vi"/>
+			<Item Name="RateLimiter.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/RateLimiter.vi"/>
+			<Item Name="EndOfPathHandler.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EndOfPathHandler.vi"/>
+			<Item Name="Latch.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/Latch.vi"/>
+			<Item Name="TimerOnDelay.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/TimerOnDelay.vi"/>
+			<Item Name="Timeout.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/Timeout.vi"/>
+			<Item Name="LookAheadPoint.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/LookAheadPoint.vi"/>
+			<Item Name="CalculateCurvature.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculateCurvature.vi"/>
+			<Item Name="VisualizePurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/VisualizePurePursuit.vi"/>
+			<Item Name="DrawCircle.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/DrawCircle.vi"/>
+			<Item Name="CalculatePowerPursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculatePowerPursuit.vi"/>
+			<Item Name="derivative.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/derivative.vi"/>
+			<Item Name="Robot.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/Robot.vi"/>
+			<Item Name="robotSimulation.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/robotSimulation.vi"/>
+			<Item Name="motorTorque.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/motorTorque.vi"/>
+			<Item Name="robotFriction.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/robotFriction.vi"/>
+			<Item Name="EncodersGyroToXY.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EncodersGyroToXY.vi"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
@@ -622,6 +654,8 @@ AddOutputFilter chunkFilter
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
+				<Item Name="FRIC_navX_DeviceNumbersTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/_TypeDefs/FRIC_navX_DeviceNumbersTypeDef.ctl"/>
+				<Item Name="Z900_navX_ProtocolTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/_TypeDefs/Z900_navX_ProtocolTypeDef.ctl"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
