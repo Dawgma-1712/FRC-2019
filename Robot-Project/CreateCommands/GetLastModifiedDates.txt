@@ -1,0 +1,16 @@
+# Prints out the timestamp the file was last modified
+# If the file is not tracked or has differences it is not printed
+# If the last modified timestamp is after the last recorded timestamp, or the file is not printed
+# the code will generate the command from the command template
+
+cd CommandTemplates
+
+for filename in *
+do	
+  if [ ! -z "$(git log -1 --format="%ad" -- "$filename")" ] && [ -z "$(git diff "$filename")" ]
+  then
+    echo "$filename $(git log -1 --format="%ai" -- "$filename")" #Change to -2 for two lines of log
+  else
+    echo $filename
+  fi
+done
