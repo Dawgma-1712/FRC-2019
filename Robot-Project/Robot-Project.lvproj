@@ -53,7 +53,25 @@
 			<Item Name="Drive Command Helper.vi" Type="VI" URL="../Drive/Implementation/Infrastructure/Drive Command Helper.vi"/>
 			<Item Name="Drive Published Globals.vi" Type="VI" URL="../Drive/Implementation/Drive Published Globals.vi"/>
 			<Item Name="Drive for Time.vi" Type="VI" URL="../Drive/Commands/Drive for Time.vi"/>
-			<Item Name="IntakeForTimeController.vi" Type="VI" URL="../Intake/IntakeForTimeController.vi"/>
+			<Item Name="Arm Operations.ctl" Type="VI" URL="../Arm/Implementation/Arm Operations.ctl"/>
+			<Item Name="Arm Setpoints.ctl" Type="VI" URL="../Arm/Implementation/Arm Setpoints.ctl"/>
+			<Item Name="Arm Published Globals.vi" Type="VI" URL="../Arm/Implementation/Arm Published Globals.vi"/>
+			<Item Name="Arm Command Helper.vi" Type="VI" URL="../Arm/Implementation/Infrastructure/Arm Command Helper.vi"/>
+			<Item Name="Go To Height.vi" Type="VI" URL="../Arm/Commands/Go To Height.vi"/>
+			<Item Name="Hatch Intake Operations.ctl" Type="VI" URL="../Hatch Intake/Implementation/Hatch Intake Operations.ctl"/>
+			<Item Name="Hatch Intake Setpoints.ctl" Type="VI" URL="../Hatch Intake/Implementation/Hatch Intake Setpoints.ctl"/>
+			<Item Name="Hatch Intake Published Globals.vi" Type="VI" URL="../Hatch Intake/Implementation/Hatch Intake Published Globals.vi"/>
+			<Item Name="Hatch Intake Command Helper.vi" Type="VI" URL="../Hatch Intake/Implementation/Infrastructure/Hatch Intake Command Helper.vi"/>
+			<Item Name="SetValue.vi" Type="VI" URL="../Hatch Intake/Commands/SetValue.vi"/>
+			<Item Name="Raise After Drive At Distance.vi" Type="VI" URL="../Arm/Commands/Raise After Drive At Distance.vi"/>
+			<Item Name="Raise After Time.vi" Type="VI" URL="../Arm/Commands/Raise After Time.vi"/>
+			<Item Name="Raise For Time.vi" Type="VI" URL="../Arm/Commands/Raise For Time.vi"/>
+			<Item Name="Intake Operations.ctl" Type="VI" URL="../Intake/Implementation/Intake Operations.ctl"/>
+			<Item Name="Intake Setpoints.ctl" Type="VI" URL="../Intake/Implementation/Intake Setpoints.ctl"/>
+			<Item Name="Intake Published Globals.vi" Type="VI" URL="../Intake/Implementation/Intake Published Globals.vi"/>
+			<Item Name="Intake Command Helper.vi" Type="VI" URL="../Intake/Implementation/Infrastructure/Intake Command Helper.vi"/>
+			<Item Name="Intake For Time.vi" Type="VI" URL="../Intake/Commands/Intake For Time.vi"/>
+			<Item Name="WaitForLimit.vi" Type="VI" URL="../Hatch Intake/Commands/WaitForLimit.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
