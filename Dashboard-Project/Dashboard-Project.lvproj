@@ -23,7 +23,6 @@
 		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi"/>
 		<Item Name="TestPaths.vi" Type="VI" URL="../TestPaths.vi"/>
 		<Item Name="DashLib.lvlib" Type="Library" URL="../DashLib.lvlib"/>
-		<Item Name="Piece.ctl" Type="VI" URL="../Piece.ctl"/>
 		<Item Name="CheckValidAction.vi" Type="VI" URL="../CheckValidAction.vi"/>
 		<Item Name="InterpretLocation.vi" Type="VI" URL="../InterpretLocation.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -260,6 +259,11 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Playback Controls.vi" Type="VI" URL="../Playback Controls.vi"/>
+			<Item Name="Routine.ctl" Type="VI" URL="../CustomThings/Routine.ctl"/>
+			<Item Name="StartingLocation.ctl" Type="VI" URL="../CustomThings/StartingLocation.ctl"/>
+			<Item Name="Height.ctl" Type="VI" URL="../CustomThings/Height.ctl"/>
+			<Item Name="NumberOfPiecesToScore.ctl" Type="VI" URL="../CustomThings/NumberOfPiecesToScore.ctl"/>
+			<Item Name="Piece.ctl" Type="VI" URL="../CustomThings/Piece.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC_Dashboard" Type="EXE">
