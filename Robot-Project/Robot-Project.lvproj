@@ -844,11 +844,11 @@ AddOutputFilter chunkFilter
 			<Item Name="TimerOffDelay.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/TimerOffDelay.vi"/>
 			<Item Name="CustomError.vi" Type="VI" URL="../../Dawgma Programming Library/WPI Helper Stuff/CustomError.vi"/>
 			<Item Name="Lossy Stream-c(i32,i32,i32,i32).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(i32,i32,i32,i32).lvlib"/>
-			<Item Name="CheesyDrive.vi" Type="VI" URL="../../Dawgma Programming Library/WPI Helper Stuff/CheesyDrive.vi"/>
-			<Item Name="LinearInterpolate.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/LinearInterpolate.vi"/>
-			<Item Name="HandleDeadband.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/HandleDeadband.vi"/>
 			<Item Name="ToggleOnPress.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/ToggleOnPress.vi"/>
 			<Item Name="Wrist Teleop.vi" Type="VI" URL="../Wrist Teleop.vi"/>
+			<Item Name="LinearInterpolate.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/LinearInterpolate.vi"/>
+			<Item Name="CheesyDrive.vi" Type="VI" URL="../../Dawgma Programming Library/WPI Helper Stuff/CheesyDrive.vi"/>
+			<Item Name="HandleDeadband.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/HandleDeadband.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
