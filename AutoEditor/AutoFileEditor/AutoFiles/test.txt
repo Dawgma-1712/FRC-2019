@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?><Sequential ID="13"><DriveForDistance Distance="150.00" ID="1" Speed="0.35"/><Parallel ID="5"><DriveForTime ID="6" Speed="0.40" Time="3.00"/><Sequential ID="7"><Wait ID="8" Time="1.00"/><DriveForTime ID="12" Speed="0.30" Time="0.50"/></Sequential></Parallel><TurnToAngle Angle="-45.00" ID="10"/></Sequential>
