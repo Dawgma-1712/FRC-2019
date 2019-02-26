@@ -73,6 +73,11 @@
 			<Item Name="Intake For Time.vi" Type="VI" URL="../Intake/Commands/Intake For Time.vi"/>
 			<Item Name="WaitForLimit.vi" Type="VI" URL="../Hatch Intake/Commands/WaitForLimit.vi"/>
 			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
+			<Item Name="Wrist Operations.ctl" Type="VI" URL="../Wrist/Implementation/Wrist Operations.ctl"/>
+			<Item Name="Wrist Setpoints.ctl" Type="VI" URL="../Wrist/Implementation/Wrist Setpoints.ctl"/>
+			<Item Name="Wrist Published Globals.vi" Type="VI" URL="../Wrist/Implementation/Wrist Published Globals.vi"/>
+			<Item Name="Wrist Command Helper.vi" Type="VI" URL="../Wrist/Implementation/Infrastructure/Wrist Command Helper.vi"/>
+			<Item Name="SetPosition.vi" Type="VI" URL="../Wrist/Commands/SetPosition.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
