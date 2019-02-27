@@ -78,6 +78,9 @@
 			<Item Name="Wrist Published Globals.vi" Type="VI" URL="../Wrist/Implementation/Wrist Published Globals.vi"/>
 			<Item Name="Wrist Command Helper.vi" Type="VI" URL="../Wrist/Implementation/Infrastructure/Wrist Command Helper.vi"/>
 			<Item Name="SetPosition.vi" Type="VI" URL="../Wrist/Commands/SetPosition.vi"/>
+			<Item Name="Stay At Height.vi" Type="VI" URL="../Arm/Commands/Stay At Height.vi"/>
+			<Item Name="PathFileData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PathFileData.ctl"/>
+			<Item Name="Drive Path.vi" Type="VI" URL="../Drive/Commands/Drive Path.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -920,6 +923,7 @@ AddOutputFilter chunkFilter
 			<Item Name="ProbeFormatting.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/ProbeFormatting.vi"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
 			<Item Name="ChannelProbeWindowStagger.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbeWindowStagger.vi"/>
+			<Item Name="PathFileData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PathFileData.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
