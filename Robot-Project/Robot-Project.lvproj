@@ -81,6 +81,7 @@
 			<Item Name="Stay At Height.vi" Type="VI" URL="../Arm/Commands/Stay At Height.vi"/>
 			<Item Name="PathFileData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PathFileData.ctl"/>
 			<Item Name="Drive Path.vi" Type="VI" URL="../Drive/Commands/Drive Path.vi"/>
+			<Item Name="Drive For Distance.vi" Type="VI" URL="../Drive/Commands/Drive For Distance.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
