@@ -960,7 +960,7 @@ AddOutputFilter chunkFilter
 			<Item Name="CreateFileEvents.vi" Type="VI" URL="../Logging/CreateFileEvents.vi"/>
 			<Item Name="LogEvents.vi" Type="VI" URL="../Logging/LogEvents.vi"/>
 			<Item Name="PathFileData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PathFileData.ctl"/>
-			<Item Name="ToggleOnPress.vi" Type="VI" URL="../../../FRC-2019-2/Dawgma Programming Library/Utilities/ToggleOnPress.vi"/>
+			<Item Name="ToggleOnPress.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/ToggleOnPress.vi"/>
 			<Item Name="OneShotPulse.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/OneShotPulse.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
