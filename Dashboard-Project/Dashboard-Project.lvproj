@@ -264,6 +264,7 @@
 			<Item Name="Height.ctl" Type="VI" URL="../CustomThings/Height.ctl"/>
 			<Item Name="NumberOfPiecesToScore.ctl" Type="VI" URL="../CustomThings/NumberOfPiecesToScore.ctl"/>
 			<Item Name="Piece.ctl" Type="VI" URL="../CustomThings/Piece.ctl"/>
+			<Item Name="LEDColorNumberToColor.vi" Type="VI" URL="../LEDColorNumberToColor.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC_Dashboard" Type="EXE">
