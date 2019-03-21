@@ -196,6 +196,12 @@
 			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 			<Item Name="HandleDeadband.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/HandleDeadband.vi"/>
 			<Item Name="Hatch After Drive At Distance.vi" Type="VI" URL="../Hatch Intake/Commands/Hatch After Drive At Distance.vi"/>
+			<Item Name="ClimbTeleop.vi" Type="VI" URL="../Climb/ClimbTeleop.vi"/>
+			<Item Name="Climber Set Value.vi" Type="VI" URL="../Climb/Commands/Climber Set Value.vi"/>
+			<Item Name="Climb Setpoints.ctl" Type="VI" URL="../Climb/Implementation/Climb Setpoints.ctl"/>
+			<Item Name="Climb Operations.ctl" Type="VI" URL="../Climb/Implementation/Climb Operations.ctl"/>
+			<Item Name="Climb Command Helper.vi" Type="VI" URL="../Climb/Implementation/Infrastructure/Climb Command Helper.vi"/>
+			<Item Name="Climb Published Globals.vi" Type="VI" URL="../Climb/Implementation/Climb Published Globals.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
