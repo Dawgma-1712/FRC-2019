@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><Sequential ID="12"><Parallel ID="4"><MoveWrist Down="TRUE" ID="5"/><Sequential ID="6"><MoveHatchIntake Collapsed="TRUE" ID="10"/><Wait ID="7" Time="0.50"/><MoveHatchIntake Collapsed="FALSE" ID="8"/></Sequential><GoToHeight Height="-1.00" ID="9" NoWait="TRUE"/></Parallel></Sequential>
