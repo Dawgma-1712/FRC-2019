@@ -204,6 +204,10 @@
 			<Item Name="Climb Command Helper.vi" Type="VI" URL="../Climb/Implementation/Infrastructure/Climb Command Helper.vi"/>
 			<Item Name="Climb Published Globals.vi" Type="VI" URL="../Climb/Implementation/Climb Published Globals.vi"/>
 			<Item Name="HoldOrRelease.vi" Type="VI" URL="../Testers/HoldOrRelease.vi"/>
+			<Item Name="PartyMode.vi" Type="VI" URL="../LEDs/PartyMode.vi"/>
+			<Item Name="Actions.ctl" Type="VI" URL="../LEDs/Actions.ctl"/>
+			<Item Name="RequestLEDAction.vi" Type="VI" URL="../LEDs/RequestLEDAction.vi"/>
+			<Item Name="LEDSetpoint.vi" Type="VI" URL="../LEDs/LEDSetpoint.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -985,8 +989,6 @@ AddOutputFilter chunkFilter
 				<Item Name="CTRE_Phoenix_MotorControl_SetQuadraturePosition_Enhanced.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Sensor/CTRE_Phoenix_MotorControl_SetQuadraturePosition_Enhanced.vi"/>
 				<Item Name="Z900_navX_ProtocolTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/Z900_navX_ProtocolTypeDef.ctl"/>
 				<Item Name="FRIC_navX_DeviceNumbersTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/FRIC_navX_DeviceNumbersTypeDef.ctl"/>
-				<Item Name="FRIC_navX_DeviceNumbersTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/_TypeDefs/FRIC_navX_DeviceNumbersTypeDef.ctl"/>
-				<Item Name="Z900_navX_ProtocolTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/_TypeDefs/Z900_navX_ProtocolTypeDef.ctl"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
