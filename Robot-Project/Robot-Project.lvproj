@@ -204,6 +204,10 @@
 			<Item Name="Climb Command Helper.vi" Type="VI" URL="../Climb/Implementation/Infrastructure/Climb Command Helper.vi"/>
 			<Item Name="Climb Published Globals.vi" Type="VI" URL="../Climb/Implementation/Climb Published Globals.vi"/>
 			<Item Name="HoldOrRelease.vi" Type="VI" URL="../Testers/HoldOrRelease.vi"/>
+			<Item Name="PartyMode.vi" Type="VI" URL="../LEDs/PartyMode.vi"/>
+			<Item Name="Actions.ctl" Type="VI" URL="../LEDs/Actions.ctl"/>
+			<Item Name="RequestLEDAction.vi" Type="VI" URL="../LEDs/RequestLEDAction.vi"/>
+			<Item Name="LEDSetpoint.vi" Type="VI" URL="../LEDs/LEDSetpoint.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
