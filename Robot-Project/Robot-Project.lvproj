@@ -17,6 +17,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="GenerateCode.vi" Type="VI" URL="../CreateCommands/GenerateCode.vi"/>
+		<Item Name="TestPurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/TestPurePursuit.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="WPI_DriverStationRobotMode2.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationRobotMode2.ctl"/>
@@ -43,6 +44,72 @@
 				<Item Name="Should Abort Operation.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Framework/Should Abort Operation.vi"/>
 				<Item Name="Prep Command Info for Wait.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Framework/Prep Command Info for Wait.vi"/>
 				<Item Name="Wait for Command.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Framework/Wait for Command.vi"/>
+				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
+				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
+				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
+				<Item Name="WPI_UtilitiesFRC Build Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC Build Error.vi"/>
+				<Item Name="WPI_UtilitiesERRGetRefNum.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesERRGetRefNum.vi"/>
+				<Item Name="Refnum Registry Operation.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/Refnum Registry Operation.ctl"/>
+				<Item Name="WPI_GetSetVariantRefNum.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_GetSetVariantRefNum.vi"/>
+				<Item Name="WPI_JoystickDeviceEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickDeviceEnum.ctl"/>
+				<Item Name="WPI_JoystickDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickDevRef.ctl"/>
+				<Item Name="WPI_JoystickRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickRefNum Registry Get.vi"/>
+				<Item Name="NetComm_getJoystickPOVs.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_getJoystickPOVs.vi"/>
+				<Item Name="NetComm_getJoystickButtons.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_getJoystickButtons.vi"/>
+				<Item Name="NetComm_getJoystickAxes.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_getJoystickAxes.vi"/>
+				<Item Name="WPI_JoystickGetValues.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickGetValues.vi"/>
+				<Item Name="NT Globals.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Globals.vi"/>
+				<Item Name="Report Read Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Report Read Error.vi"/>
+				<Item Name="Sequence.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Sequence.ctl"/>
+				<Item Name="Field Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Field Type.ctl"/>
+				<Item Name="Field Data.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Field Data.ctl"/>
+				<Item Name="Field ID.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Field ID.ctl"/>
+				<Item Name="Field Data Manager.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Field Data Manager.vi"/>
+				<Item Name="Prepare Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Prepare Pattern.vi"/>
+				<Item Name="Tokenize Path.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Tokenize Path.vi"/>
+				<Item Name="String Matches Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/String Matches Pattern.vi"/>
+				<Item Name="Make Table Operation.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Make Table Operation.ctl"/>
+				<Item Name="Table Manager.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Table Manager.vi"/>
+				<Item Name="Usage Statistics.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Usage Statistics.vi"/>
+				<Item Name="Create Actual Table Name.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Create Actual Table Name.vi"/>
+				<Item Name="NT Read Name Cache.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Name Cache.vi"/>
+				<Item Name="NT Read Number.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Number.vi"/>
+				<Item Name="NT Read Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Variant.vi"/>
+				<Item Name="NT Read Raw.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Raw.vi"/>
+				<Item Name="NT Read String Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read String Array.vi"/>
+				<Item Name="NT Read Numeric Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Numeric Array.vi"/>
+				<Item Name="NT Read Boolean Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Boolean Array.vi"/>
+				<Item Name="NT Read String.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read String.vi"/>
+				<Item Name="NT Read Boolean.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Boolean.vi"/>
+				<Item Name="NT Read Value.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Value.vi"/>
+				<Item Name="Manage Dirty Field ID List.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Manage Dirty Field ID List.vi"/>
+				<Item Name="Manage Connection List.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Manage Connection List.vi"/>
+				<Item Name="Update Other Clients.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Update Other Clients.vi"/>
+				<Item Name="LEB Encoder.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/LEB Encoder.vi"/>
+				<Item Name="Convert String to NT String Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Convert String to NT String Buffer.vi"/>
+				<Item Name="Convert String to NT String Array Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Convert String to NT String Array Buffer.vi"/>
+				<Item Name="Convert String to NT Numeric Array Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Convert String to NT Numeric Array Buffer.vi"/>
+				<Item Name="Convert String to NT Boolean Array Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Convert String to NT Boolean Array Buffer.vi"/>
+				<Item Name="Convert NT Boolean to LV String.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Convert NT Boolean to LV String.vi"/>
+				<Item Name="Convert NT Types.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Convert NT Types.vi"/>
+				<Item Name="Build Entry Assign Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Build Entry Assign Buffer.vi"/>
+				<Item Name="Cached Name Lookup.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Cached Name Lookup.vi"/>
+				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
+				<Item Name="NT Write Name Cache.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Name Cache.vi"/>
+				<Item Name="NT Write Number.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Number.vi"/>
+				<Item Name="NT Write Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Variant.vi"/>
+				<Item Name="NT Write Raw.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Raw.vi"/>
+				<Item Name="NT Write String Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write String Array.vi"/>
+				<Item Name="NT Write Numeric Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Numeric Array.vi"/>
+				<Item Name="NT Write Boolean Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Boolean Array.vi"/>
+				<Item Name="NT Write String.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write String.vi"/>
+				<Item Name="NT Write Boolean.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Boolean.vi"/>
+				<Item Name="NT Write Value.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Value.vi"/>
+				<Item Name="WPI_DriverStationReport Robot Code State.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationReport Robot Code State.vi"/>
+				<Item Name="WPI_DriverStationMatch Info.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationMatch Info.ctl"/>
+				<Item Name="WPI_DriverStationDerivedRobotMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationDerivedRobotMode.ctl"/>
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
+				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 			</Item>
 			<Item Name="Robot Global Data.vi" Type="VI" URL="../Framework/Robot Global Data.vi"/>
 			<Item Name="CreateCommandsFromTemplates.vi" Type="VI" URL="../CreateCommands/CreateCommandsFromTemplates.vi"/>
@@ -73,6 +140,62 @@
 			<Item Name="Intake For Time.vi" Type="VI" URL="../Intake/Commands/Intake For Time.vi"/>
 			<Item Name="WaitForLimit.vi" Type="VI" URL="../Hatch Intake/Commands/WaitForLimit.vi"/>
 			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
+			<Item Name="Wrist Operations.ctl" Type="VI" URL="../Wrist/Implementation/Wrist Operations.ctl"/>
+			<Item Name="Wrist Setpoints.ctl" Type="VI" URL="../Wrist/Implementation/Wrist Setpoints.ctl"/>
+			<Item Name="Wrist Published Globals.vi" Type="VI" URL="../Wrist/Implementation/Wrist Published Globals.vi"/>
+			<Item Name="Wrist Command Helper.vi" Type="VI" URL="../Wrist/Implementation/Infrastructure/Wrist Command Helper.vi"/>
+			<Item Name="SetPosition.vi" Type="VI" URL="../Wrist/Commands/SetPosition.vi"/>
+			<Item Name="Stay At Height.vi" Type="VI" URL="../Arm/Commands/Stay At Height.vi"/>
+			<Item Name="PathFileData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PathFileData.ctl"/>
+			<Item Name="Drive Path.vi" Type="VI" URL="../Drive/Commands/Drive Path.vi"/>
+			<Item Name="Drive For Distance.vi" Type="VI" URL="../Drive/Commands/Drive For Distance.vi"/>
+			<Item Name="HeightPreset.vi" Type="VI" URL="../Arm/HeightPreset.vi"/>
+			<Item Name="Constants.vi" Type="VI" URL="../Configuration/Constants.vi"/>
+			<Item Name="InchesToArmUnits.vi" Type="VI" URL="../Arm/InchesToArmUnits.vi"/>
+			<Item Name="InjectPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/InjectPoints.vi"/>
+			<Item Name="DistanceFormula.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/DistanceFormula.vi"/>
+			<Item Name="Smoother.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/Smoother.vi"/>
+			<Item Name="PurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PurePursuit.vi"/>
+			<Item Name="RadiusOfCircleThreePoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RadiusOfCircleThreePoints.vi"/>
+			<Item Name="CalcDistanceFromEnd.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalcDistanceFromEnd.vi"/>
+			<Item Name="CalculateVelAtPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculateVelAtPoints.vi"/>
+			<Item Name="ClosestPoint.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/ClosestPoint.vi"/>
+			<Item Name="RateLimiter.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/RateLimiter.vi"/>
+			<Item Name="EndOfPathHandler.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EndOfPathHandler.vi"/>
+			<Item Name="Latch.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/Latch.vi"/>
+			<Item Name="TimerOnDelay.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/TimerOnDelay.vi"/>
+			<Item Name="Timeout.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/Timeout.vi"/>
+			<Item Name="LookAheadPoint.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/LookAheadPoint.vi"/>
+			<Item Name="CalculateCurvature.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculateCurvature.vi"/>
+			<Item Name="VisualizePurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/VisualizePurePursuit.vi"/>
+			<Item Name="DrawCircle.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/DrawCircle.vi"/>
+			<Item Name="CalculatePowerPursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculatePowerPursuit.vi"/>
+			<Item Name="derivative.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/derivative.vi"/>
+			<Item Name="Robot.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/Robot.vi"/>
+			<Item Name="robotSimulation.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/robotSimulation.vi"/>
+			<Item Name="motorTorque.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/motorTorque.vi"/>
+			<Item Name="robotFriction.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/robotFriction.vi"/>
+			<Item Name="EncodersGyroToXY.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EncodersGyroToXY.vi"/>
+			<Item Name="Drive Immediate.vi" Type="VI" URL="../Drive/Commands/Drive Immediate.vi"/>
+			<Item Name="SmallestAngle.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/SmallestAngle.vi"/>
+			<Item Name="SimpleVisionAlign.vi" Type="VI" URL="../Vision/SimpleVisionAlign.vi"/>
+			<Item Name="LinearInterpolate.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/LinearInterpolate.vi"/>
+			<Item Name="CheesyDrive.vi" Type="VI" URL="../../Dawgma Programming Library/WPI Helper Stuff/CheesyDrive.vi"/>
+			<Item Name="Drive Teleop.vi" Type="VI" URL="../Drive/Drive Teleop.vi"/>
+			<Item Name="ToggleOnPress.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/ToggleOnPress.vi"/>
+			<Item Name="OneShotPulse.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/OneShotPulse.vi"/>
+			<Item Name="Wrist Teleop.vi" Type="VI" URL="../Wrist/Wrist Teleop.vi"/>
+			<Item Name="Arm Immediate.vi" Type="VI" URL="../Arm/Commands/Arm Immediate.vi"/>
+			<Item Name="Arm Teleop.vi" Type="VI" URL="../Arm/Arm Teleop.vi"/>
+			<Item Name="FloorHatchImmediate.vi" Type="VI" URL="../Hatch Intake/Commands/FloorHatchImmediate.vi"/>
+			<Item Name="Hatch Teleop.vi" Type="VI" URL="../Hatch Intake/Hatch Teleop.vi"/>
+			<Item Name="DataNames.ctl" Type="VI" URL="../Logging/DataNames.ctl"/>
+			<Item Name="LogOperation.ctl" Type="VI" URL="../Logging/LogOperation.ctl"/>
+			<Item Name="LoggingOperation.vi" Type="VI" URL="../Logging/LoggingOperation.vi"/>
+			<Item Name="Intake Immediate.vi" Type="VI" URL="../Intake/Commands/Intake Immediate.vi"/>
+			<Item Name="Intake Teleop.vi" Type="VI" URL="../Intake/Intake Teleop.vi"/>
+			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
+			<Item Name="HandleDeadband.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/HandleDeadband.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -103,10 +226,10 @@
 		<Property Name="target.IsRemotePanelSupported" Type="Bool">true</Property>
 		<Property Name="target.RTCPULoadMonitoringEnabled" Type="Bool">true</Property>
 		<Property Name="target.RTDebugWebServerHTTPPort" Type="Int">8001</Property>
-		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
+		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/home/lvuser/natinst/bin</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -194,6 +317,9 @@ AddOutputFilter chunkFilter
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="LEDs" Type="Folder" URL="../LEDs">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Configuration" Type="Folder" URL="../Configuration">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
@@ -683,11 +809,9 @@ AddOutputFilter chunkFilter
 				<Item Name="CTRE_Phoenix_MotorControl_EnableCurrentLimit.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Current Limit/CTRE_Phoenix_MotorControl_EnableCurrentLimit.vi"/>
 				<Item Name="NavX Main.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/NavX Main.vi"/>
 				<Item Name="FRIC_navX_Internal_I2C_ProcessingLoop.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_Processing Loop/FRIC_navX_Internal_I2C_ProcessingLoop.vi"/>
-				<Item Name="FRIC_navX_DeviceNumbersTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/FRIC_navX_DeviceNumbersTypeDef.ctl"/>
 				<Item Name="FRIC_navX_ProcessingLoopStatesTypeDef_I2C.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/FRIC_navX_ProcessingLoopStatesTypeDef_I2C.ctl"/>
 				<Item Name="FRIC_navX_I2C Process Loop TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/FRIC_navX_I2C Process Loop TypeDef.ctl"/>
 				<Item Name="Z900_navX_DeviceTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/Z900_navX_DeviceTypeDef.ctl"/>
-				<Item Name="Z900_navX_ProtocolTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/Z900_navX_ProtocolTypeDef.ctl"/>
 				<Item Name="Z900_navX_NotifyPacketTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/Z900_navX_NotifyPacketTypeDef.ctl"/>
 				<Item Name="Z900_navX_ActionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/Z900_navX_ActionTypeDef.ctl"/>
 				<Item Name="Z900_navX_SerialStreamTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/Z900_navX_SerialStreamTypeDef.ctl"/>
@@ -848,6 +972,11 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_MotorControlEnableRefType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlEnableRefType.ctl"/>
 				<Item Name="NetComm_SendMessage.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_SendMessage.vi"/>
 				<Item Name="WPI_UtilitiesFRC SendMessageToConsole.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC SendMessageToConsole.vi"/>
+				<Item Name="CTRE_Phoenix_MotorControl_SetQuadraturePosition_Enhanced.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Sensor/CTRE_Phoenix_MotorControl_SetQuadraturePosition_Enhanced.vi"/>
+				<Item Name="Z900_navX_ProtocolTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/Z900_navX_ProtocolTypeDef.ctl"/>
+				<Item Name="FRIC_navX_DeviceNumbersTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/FRIC_navX_DeviceNumbersTypeDef.ctl"/>
+				<Item Name="FRIC_navX_DeviceNumbersTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/_TypeDefs/FRIC_navX_DeviceNumbersTypeDef.ctl"/>
+				<Item Name="Z900_navX_ProtocolTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/_TypeDefs/Z900_navX_ProtocolTypeDef.ctl"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -872,7 +1001,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Routine.ctl" Type="VI" URL="../../Dashboard-Project/CustomThings/Routine.ctl"/>
 			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
 			<Item Name="Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,c(dbl,dbl)).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,c(dbl,dbl)).lvlib"/>
-			<Item Name="Constants.vi" Type="VI" URL="../Configuration/Constants.vi"/>
 			<Item Name="PurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PurePursuit.vi"/>
 			<Item Name="RadiusOfCircleThreePoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RadiusOfCircleThreePoints.vi"/>
 			<Item Name="CalcDistanceFromEnd.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalcDistanceFromEnd.vi"/>
@@ -894,7 +1022,6 @@ AddOutputFilter chunkFilter
 			<Item Name="TimerOffDelay.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/TimerOffDelay.vi"/>
 			<Item Name="DriveForDistanceController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/DriveForDistanceController.vi"/>
 			<Item Name="InjectPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/InjectPoints.vi"/>
-			<Item Name="OneShotPulse.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/OneShotPulse.vi"/>
 			<Item Name="StartingLocations.vi" Type="VI" URL="../../AutoEditor/PathDrawer/StartingLocations.vi"/>
 			<Item Name="EncodersGyroToXY.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EncodersGyroToXY.vi"/>
 			<Item Name="CheesyDrive.vi" Type="VI" URL="../../Dawgma Programming Library/WPI Helper Stuff/CheesyDrive.vi"/>
@@ -908,8 +1035,6 @@ AddOutputFilter chunkFilter
 			<Item Name="LoggingOperation.vi" Type="VI" URL="../Logging/LoggingOperation.vi"/>
 			<Item Name="WriteMiscData.vi" Type="VI" URL="../Logging/WriteMiscData.vi"/>
 			<Item Name="LogData.vi" Type="VI" URL="../Logging/LogData.vi"/>
-			<Item Name="ToggleOnPress.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/ToggleOnPress.vi"/>
-			<Item Name="Wrist Teleop.vi" Type="VI" URL="../Wrist Teleop.vi"/>
 			<Item Name="Stream.lvlib" Type="Library" URL="/&lt;resource&gt;/Channels/Stream/Stream.lvlib"/>
 			<Item Name="Update Probe Details String.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/Update Probe Details String.vi"/>
 			<Item Name="ProbeFormatting.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/ProbeFormatting.vi"/>
@@ -917,6 +1042,9 @@ AddOutputFilter chunkFilter
 			<Item Name="ChannelProbeWindowStagger.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbeWindowStagger.vi"/>
 			<Item Name="CreateFileEvents.vi" Type="VI" URL="../Logging/CreateFileEvents.vi"/>
 			<Item Name="LogEvents.vi" Type="VI" URL="../Logging/LogEvents.vi"/>
+			<Item Name="PathFileData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PathFileData.ctl"/>
+			<Item Name="ToggleOnPress.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/ToggleOnPress.vi"/>
+			<Item Name="OneShotPulse.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/OneShotPulse.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -930,10 +1058,11 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_buildSpecName" Type="Str">FRC Robot Boot-up Deployment</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/competition/Documents/LabVIEW Data/Projects/FRC-2019/Robot-Project/Builds</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Builds</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2136F65-FD06-4AC9-A317-10E44B9EF7A4}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
